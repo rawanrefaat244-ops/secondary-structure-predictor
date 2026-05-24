@@ -27,6 +27,10 @@ svm_q3_model.pkl
 *.dssp
 er.name
 
+# Ignore PDB files except required 3AVE input
+*.pdb
+!3ave.pdb
+
 # OS files
 .DS_Store
 Thumbs.db
