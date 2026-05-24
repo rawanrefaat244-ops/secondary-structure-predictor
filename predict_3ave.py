@@ -118,9 +118,7 @@ def q3_score(true_labels, pred_labels):
     return correct / n
 
 def clean_jpred_prediction(jpred_raw):
-    """
-    Replace JPred '-' with Coil 'C'
-    """
+
     return jpred_raw.replace("-", "C")
 
 

@@ -1,4 +1,32 @@
+# Python cache
+__psycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
 .venv/
-__pycache__/
+.venv-py310/
+ss_predictor_env/
+
+# IDE settings
 .idea/
-trial_two.py
+.vscode/
+
+# Temporary / backup files
+*.save
+*.tmp
+*.log
+
+# Large trained model file
+svm_q3_model.pkl
+
+# Generated / intermediate bioinformatics files
+*.pdb
+*.pssm
+*.dssp
+er.name
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -11,9 +11,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 
-# ===========================
+# ==========================
 # CONFIG
-# ===========================
+# ==========================
 PDB_FOLDER = "/home/lenovo555/protein_project/pdbs"  # Change path if needed
 CHAIN_ID = "A"
 MIN_LEN = 30
@@ -24,8 +24,8 @@ skipped_files = 0
 # DSSP 8-state -> Q3 mapping
 DSSP_TO_Q3 = {
     "H": "H", "G": "H", "I": "H",  # Helix-like
-    "E": "E", "B": "E",  # Beta-like
-    "T": "C", "S": "C", "-": "C"  # Coil-like
+    "E": "E", "B": "E",            # Beta-like
+    "T": "C", "S": "C", "-": "C"   # Coil-like
 }
 
 
@@ -144,7 +144,7 @@ def prepare_data():
     X_all = []
     y_all = []
 
-    pdb_files = sorted(os.listdir(PDB_FOLDER))[:200]
+    pdb_files = os.listdir(PDB_FOLDER)
 
     for fname in pdb_files:
         if not fname.endswith(".pdb"):
